@@ -1,0 +1,145 @@
+
+
+<html>
+    <head>  
+        <style> 
+            input[type=button], input[type=submit], input[type=reset] {
+              background-color: #494545;
+              border: none;
+              color: rgba(255, 252, 252, 0.916);
+              padding: 6px 12px;
+              text-decoration: none;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
+            </style>
+    </head>
+
+    <body bgcolor =  #c7a8ee>
+        <h2>
+        Churn Prediction : <br><br>
+        </h2>
+        <h3>
+        <form action="/predict" method="post">
+            tenure : <input type="text" name="tenure" id="tenure" placeholder="Enter Tenure"><br><br>
+
+            <label for="SeniorCitizen">SeniorCitizen :</label>
+                <select name="SeniorCitizen" id="SeniorCitizen">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+                </select><br><br>
+
+            
+
+            <label for="gender">gender :</label>
+                <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                </select><br><br>
+
+            <label for="Partner">Partner :</label>
+                <select name="Partner" id="Partner">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                </select><br><br>
+
+            <label for="Dependents">Dependents :</label>
+                <select name="Dependents" id="Dependents">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                </select><br><br>
+
+            <label for="PhoneService">PhoneService :</label>
+                <select name="PhoneService" id="PhoneService">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                </select><br><br>
+
+            <label for="MultipleLines">MultipleLines :</label>
+                <select name="MultipleLines" id="MultipleLines">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="No phone service">No phone service</option>
+                </select><br><br>
+
+            <label for="InternetService">InternetService :</label>
+                <select name="InternetService" id="InternetService">
+                <option value="DSL">DSL</option>
+                <option value="Fiber optic">Fiber optic</option>
+                <option value="No">No</option>
+                </select><br><br>
+
+            <label for="OnlineSecurity">OnlineSecurity :</label>
+                <select name="OnlineSecurity" id="OnlineSecurity">
+                <option value="Yes">Yes</option>
+                <option value="No internet service">No internet service</option>
+                <option value="No">No</option>
+                </select><br><br>
+
+            <label for="OnlineBackup">OnlineBackup :</label>
+                <select name="OnlineBackup" id="OnlineBackup">
+                <option value="Yes">Yes</option>
+                <option value="No internet service">No internet service</option>
+                <option value="No">No</option>
+                </select><br><br>
+
+            <label for="DeviceProtection">DeviceProtection :</label>
+                <select name="DeviceProtection" id="DeviceProtection">
+                <option value="Yes">Yes</option>
+                <option value="No internet service">No internet service</option>
+                <option value="No">No</option>
+                </select><br><br>
+
+            <label for="TechSupport">TechSupport :</label>
+                <select name="TechSupport" id="TechSupport">
+                <option value="Yes">Yes</option>
+                <option value="No internet service">No internet service</option>
+                <option value="No">No</option>
+                </select><br><br>
+
+            <label for="StreamingTV">StreamingTV :</label>
+                <select name="StreamingTV" id="StreamingTV">
+                <option value="Yes">Yes</option>
+                <option value="No internet service">No internet service</option>
+                <option value="No">No</option>
+                </select><br><br>
+
+            <label for="StreamingMovies">StreamingMovies :</label>
+                <select name="StreamingMovies" id="StreamingMovies">
+                <option value="Yes">Yes</option>
+                <option value="No internet service">No internet service</option>
+                <option value="No">No</option>
+                </select><br><br>
+
+            <label for="Contract">Contract :</label>
+                <select name="Contract" id="Contract">
+                <option value="Month-to-month">Month-to-month</option>
+                <option value="One year">One year</option>
+                <option value="Two year">Two year</option>
+                </select><br><br>
+            
+            <label for="PaperlessBilling">PaperlessBilling :</label>
+                <select name="PaperlessBilling" id="PaperlessBilling">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                </select><br><br>
+
+            <label for="PaymentMethod">PaymentMethod :</label>
+                <select name="PaymentMethod" id="PaymentMethod">
+                <option value="Bank transfer (automatic)">Bank transfer (automatic)</option>
+                <option value="Credit card (automatic)">Credit card (automatic)</option>
+                <option value="Electronic check">Electronic check</option>
+                <option value="Mailed check">Mailed check</option>
+                </select><br><br>
+                <h2><input type="submit" value="Predict Churn" >
+            
+            
+            
+
+
+        </form>
+    </h3>
+</body>
+</html>
+
+
