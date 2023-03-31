@@ -1,4 +1,4 @@
-import config
+
 import pickle,json
 import numpy as np
 class Churn():
@@ -7,10 +7,10 @@ class Churn():
         self.data = data
 
     def load_model(self):
-        with open(config.model_path,"rb") as f:
+        with open("churn_model.pkl","rb") as f:
             self.model = pickle.load(f)
 
-        with open(config.model_data_path,"r") as f:
+        with open("model_data.json","r") as f:
             self.model_data = json.load(f)
         
     def predict_churn(self):
